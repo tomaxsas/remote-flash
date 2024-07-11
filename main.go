@@ -38,7 +38,7 @@ func main() {
 		fmt.Println("Error connecting to UDP server in net Dial")
 		panic(err)
 	}
-	data, err := hex.DecodeString("11")
+	data, err := hex.DecodeString("000000000011")
 	if err != nil {
 		panic(err)
 	}
