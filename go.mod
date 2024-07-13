@@ -6,6 +6,7 @@ require (
 	gioui.org v0.7.0
 	gioui.org/x v0.7.0
 	github.com/inetaf/tcpproxy v0.0.0-20240214030015-3ce58045626c
+	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 )
 
 require (
