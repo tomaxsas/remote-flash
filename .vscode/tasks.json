@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "gio: release package",
+			"command": "gogio",
+			"options": {
+				"env": {
+					"GOOS": "windows",
+					"GOARCH": "amd64"
+				}
+			},
+			"args": [
+				"-target=windows",
+				"-buildmode=exe",
+				"-arch=amd64",
+				"-ldflags=-w -s",
+				"-x",
+				"-o", 
+				"remote flash helper.exe", 
+				"${workspaceFolder}"
+			],
+			"group": "build",
+		}
+	]
+}
