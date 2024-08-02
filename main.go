@@ -32,6 +32,7 @@ func main() {
 	l.MaxAge = 30
 	l.MaxBackups = 30
 	log.SetOutput(l)
+	log.SetFlags(log.LstdFlags)
 	c := make(chan bool)
 	e := make(chan bool)
 

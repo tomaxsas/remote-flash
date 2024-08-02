@@ -1,8 +1,14 @@
 # Remote flash helper
 
-Currently works with TGflash on BMW via ENET.
+Currently works with TGflash on BMW via ENET cable.
 
-Use this tool at your own risk!!!
+
+>[!IMPORTANT]
+>Use this tool at your own risk!!!
+>
+>Require stable Internet and VPN connection.
+>
+>Not responsible for damaged ECU.
 
 ## Setup
 
@@ -12,9 +18,14 @@ Use this tool at your own risk!!!
 ## Flashing remotely
 
 - Setup VPN connection between your and client PC
-- Start some remotely utility (bimmertool from bimmerutility, remote net etc.) on client PC
+- Start some remotely utility (bimmertool from bimmerutility, remote enet etc.) on client PC
 - On your pc start some ZGW search tool and note IP address (it should be VPN IP)
 - Start remoteflash utility
-- Enter ZGW IP IP address
+- Enter ZGW IP address
 - CLick connect to car and Start
 - Open TGFlash and start flashing
+
+## TODO
+
+- Test BitBox
+- Test Quick flash from bimmertuning tools

@@ -34,7 +34,7 @@ func getCarInfo(ip string) error {
 	if err != nil {
 		panic(err)
 	}
-	udpClient.SetDeadline(time.Now().Add(time.Second))
+	udpClient.SetDeadline(time.Now().Add(time.Millisecond * 1500))
 	_, err = udpClient.Write(data)
 	if err != nil {
 		log.Println("Got error writing to UDP client: ", err)
