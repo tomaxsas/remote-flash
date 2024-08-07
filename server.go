@@ -88,7 +88,7 @@ func startProxy(vpnIP string) error {
 			if err != nil {
 				log.Println("Got error while starting UDP server", err)
 			}
-			log.Println("Got UDP request from tgflash")
+			log.Println("Got car info UDP request")
 
 			// Write back the message over UPD
 			udpServer.WriteToUDP(carInfo, addr)

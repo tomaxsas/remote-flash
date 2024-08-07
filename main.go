@@ -110,7 +110,7 @@ func run(window *app.Window, c, exch chan bool) error {
 					startedProxy = true
 					log.Println("Successfully started proxy")
 				}
-				labelText = "Server started. Proceed with flashing."
+				labelText = "Server successfully started."
 			}
 
 			layout.Center.Layout(gtx, func(gtx C) D {
